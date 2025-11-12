@@ -5,7 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        background-image: url("mario-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      
+    }
+    img{
+        width: 200px;
+        position: absolute;
+        bottom: 13.7%;
+        animation: mariorun 2.5s linear;
+        animation-iteration-count: infinite;
+    }
+    @keyframes mariorun{
+
+        0% {
+             transform: translateX(0);
+            }
+        100% {
+                 transform: translateX(calc(100vw - 200px));
+            }
+
+    }
+</style>
 <body>
-    
+    <img src="mario.gif" alt="mario running">
 </body>
 </html>
